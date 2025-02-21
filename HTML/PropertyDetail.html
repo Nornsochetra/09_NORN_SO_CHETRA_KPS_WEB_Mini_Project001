@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      @font-face {
+        font-family: "FontEN";
+        src: url(../FONT/Poppins/Poppins-Bold.ttf);
+      }
+      @font-face {
+        font-family: "FontENnormal";
+        src: url(../FONT/Poppins/Poppins-Light.ttf);
+      }
+      .card-shadow {
+        box-shadow: 0 0 5px 0 rgba(54, 54, 54, 0.349);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="flex justify-between text-center px-24 py-6 sticky top-0 z-10 shadow-sm"
+      style="background-color: rgba(255, 255, 255, 0.8)"
+    >
+      <nav class="flex gap-25 text-center justify-center">
+        <h2 class="text-2xl font-bold">Tripster</h2>
+        <ul class="flex gap-15 text-lg py-1">
+          <li><a href=""></a>Properties</li>
+          <li><a href=""></a>Attractions</li>
+          <li><a href="">Popular</a></li>
+        </ul>
+      </nav>
+      <article class="flex text-lg gap-5">
+        <button
+          class="text-blue-500 border text-center p-2 w-32 rounded-3xl border-blue-500"
+        >
+          Sign up
+        </button>
+        <button class="text-white text-center p-2 w-32 rounded-3xl bg-blue-500">
+          Log in
+        </button>
+      </article>
+    </header>
+
+    <div class="px-24 py-10">
+      <a href="../HTML/Index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6">
+          <path
+            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Image Display -->
+    <article class="flex px-24 relative">
+      <img
+        src="../IMG/HotelNorrebro.jpg"
+        alt="HotelNorrebro"
+        class="rounded-xl w-[610px] h-[420px]"
+      />
+      <img
+        src="../IMG/Norrebo1.jpg"
+        alt="Norrebo1"
+        class="rounded-xl w-[350px] h-[207px] absolute left-[713px]"
+      />
+      <img
+        src="../IMG/Norrebo2.jpg"
+        alt="Norrebo2"
+        class="rounded-xl w-[350px] h-[207px] absolute left-[713px] top-[212px]"
+      />
+      <img
+        src="../IMG/Norrebo3.jpg"
+        alt="Norrebo3"
+        class="rounded-xl w-[350px] h-[207px] absolute left-[1070px]"
+      />
+      <img
+        src="../IMG/Norrebo4.jpg"
+        alt="Norrebo4"
+        class="rounded-xl w-[350px] h-[207px] absolute left-[1070px] top-[212px]"
+      />
+    </article>
+
+    <!-- Property Details -->
+    <section class="px-24 py-8 flex flex-col">
+      <div class="flex mr-10 relative flex-col">
+        <p class="font-[FontEN] text-2xl">Hotel Norrebro</p>
+        <p class="text-gray-500 font-[FontENnormal]">
+          3-star hotel located in the heart of Copenhagen
+        </p>
+        <p class="absolute text-green-400 left-[1170px] font-[FontEN]">
+          Excellent
+        </p>
+        <p
+          class="absolute bg-green-200 text-green-700 left-[1272px] top-[8px] px-4 py-1 rounded-full"
+        >
+          9.6
+        </p>
+        <p class="absolute left-[1150px] top-[25px] text-gray-500">
+          1,920 reviews
+        </p>
+      </div>
+    </section>
+
+    <!-- Nav Bar -->
+    <div class="flex gap-10 relative px-28">
+      <a href="#" class="pb-2 text-blue-600 font-medium relative"
+        >Overview
+
+        <span
+          class="absolute left-[-20px] -bottom-[1px] w-[105px] h-0.5 bg-blue-600"
+        ></span>
+      </a>
+      <a href="#" class="pb-2 text-gray-600 hover:text-blue-600">Rooms</a>
+      <a href="#" class="pb-2 text-gray-600 hover:text-blue-600">Amenities</a>
+      <a href="#" class="pb-2 text-gray-600 hover:text-blue-600">Policies</a>
+    </div>
+
+    <!-- Property Overview -->
+    <section class="flex px-24 relative pb-10">
+      <article class="flex flex-col justify-between">
+        <h2 class="font-[FontEN] text-xl mt-7">Property verview</h2>
+        <div class="flex flex-row mt-4 gap-5 text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            class="w-5"
+          >
+            <path
+              d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"
+            />
+          </svg>
+          <p>Free Wifi</p>
+          <div class="mx-32 flex gap-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="w-5"
+            >
+              <path
+                d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM192 256l48 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-48 0 0 64zm48 64l-48 0 0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64 0-120c0-22.1 17.9-40 40-40l72 0c53 0 96 43 96 96s-43 96-96 96z"
+              />
+            </svg>
+            <p>Free parking</p>
+          </div>
+        </div>
+        <div class="flex flex-row mt-4 gap-5 text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="w-5"
+          >
+            <path
+              d="M288 32c0 17.7 14.3 32 32 32l32 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128c-17.7 0-32 14.3-32 32s14.3 32 32 32l320 0c53 0 96-43 96-96s-43-96-96-96L320 0c-17.7 0-32 14.3-32 32zm64 352c0 17.7 14.3 32 32 32l32 0c53 0 96-43 96-96s-43-96-96-96L32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0c-17.7 0-32 14.3-32 32zM128 512l32 0c53 0 96-43 96-96s-43-96-96-96L32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-32 0c-17.7 0-32 14.3-32 32s14.3 32 32 32z"
+            />
+          </svg>
+          <p>Air conditioning</p>
+          <div class="mx-19 flex gap-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="w-5"
+            >
+              <path
+                d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+              />
+            </svg>
+            <p>24-hour front desk</p>
+          </div>
+        </div>
+        <div class="flex flex-row mt-4 gap-5 text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="w-5"
+          >
+            <path
+              d="M64 131.9C64 112.1 80.1 96 99.9 96c9.5 0 18.6 3.8 25.4 10.5l16.2 16.2c-21 38.9-17.4 87.5 10.9 123L151 247c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L345 121c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-1.3 1.3c-35.5-28.3-84.2-31.9-123-10.9L170.5 61.3C151.8 42.5 126.4 32 99.9 32C44.7 32 0 76.7 0 131.9L0 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-316.1zM256 352a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-128a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm64 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm32-32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+            />
+          </svg>
+          <p>Private bathroom</p>
+        </div>
+        <div class="flex flex-row mt-4 gap-5 text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+            class="w-5"
+          >
+            <path
+              d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 256l64 0c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16L80 384c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zm256-32l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-128 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+            />
+          </svg>
+          <p>Key card access</p>
+        </div>
+        <div class="absolute left-[1070px] mt-7">
+          <img
+            src="../IMG/location.png"
+            alt="located"
+            class="w-[350px] h-[188px] rounded-2xl"
+          />
+        </div>
+      </article>
+    </section>
+
+    <!-- Rooms -->
+    <section class="flex flex-col gap-5 bg-gray-100 w-full h-[580px] px-24">
+      <h2 class="font-[FontEN] text-xl mt-7">Rooms</h2>
+      <article class="flex gap-4">
+        <!-- Double standard room -->
+        <div class="bg-white w-[400px] mt-2 rounded-3xl card-shadow">
+          <img
+            src="../IMG/HotelNorrebro.jpg"
+            alt="HotelNorrebro"
+            class="p-2 rounded-4xl h-[250px] w-full"
+          />
+          <p class="mx-5 font-[FontEN] text-base">Double standard room</p>
+          <div class="flex flex-row gap-2 mx-5 mt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="w-3"
+            >
+              <path
+                d="M384 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z"
+              />
+            </svg>
+            <p>18 sqm</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+              />
+            </svg>
+            <p>2 people</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+              />
+            </svg>
+            <p>1 queen bed or 2 separate beds</p>
+          </div>
+          <p class="mx-3 mt-2 text-gray-500">
+            Non-refundable, Breakfast included
+          </p>
+          <div class="p-3 text-center">
+            <button class="bg-blue-500 w-full rounded-full p-2 text-white">
+              Book now for $180
+            </button>
+          </div>
+        </div>
+
+        <!-- Comfort single room -->
+        <div class="bg-white w-[400px] mt-2 rounded-3xl card-shadow">
+          <img
+            src="../IMG/ComfortSingleRoom.jpg"
+            alt="ComfortSingleRoom"
+            class="p-2 rounded-4xl h-[250px] w-full"
+          />
+          <p class="mx-5 font-[FontEN] text-base">Comfort single room</p>
+          <div class="flex flex-row gap-2 mx-5 mt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="w-3"
+            >
+              <path
+                d="M384 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z"
+              />
+            </svg>
+            <p>21 sqm</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+              />
+            </svg>
+            <p>2 people</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+              />
+            </svg>
+            <p>1 king size bed</p>
+          </div>
+          <p class="mx-3 mt-2 text-gray-500">
+            Non-refundable, Breakfast included
+          </p>
+          <div class="p-3 text-center">
+            <button class="bg-blue-500 w-full rounded-full p-2 text-white">
+              Book now for $220
+            </button>
+          </div>
+        </div>
+
+        <!-- Double standard room -->
+        <div class="bg-white w-[400px] mt-2 rounded-3xl card-shadow">
+          <img
+            src="../IMG/doubleStandardRoom.jpg"
+            alt="doubleStandardRoom"
+            class="p-2 rounded-4xl h-[250px] w-full"
+          />
+          <p class="mx-5 font-[FontEN] text-base">Double standard room</p>
+          <div class="flex flex-row gap-2 mx-5 mt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="w-3"
+            >
+              <path
+                d="M384 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z"
+              />
+            </svg>
+            <p>25 sqm</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+              />
+            </svg>
+            <p>2 people</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+              />
+            </svg>
+            <p>1 king size bed</p>
+          </div>
+          <p class="mx-3 mt-2 text-gray-500">
+            Non-refundable, Breakfast included
+          </p>
+          <div class="p-3 text-center">
+            <button class="bg-blue-500 w-full rounded-full p-2 text-white">
+              Book now for $250
+            </button>
+          </div>
+        </div>
+
+        <!-- Double fancy room -->
+        <div class="bg-white w-[400px] mt-2 rounded-3xl card-shadow">
+          <img
+            src="../IMG/doubleFancyRoom.jpg"
+            alt="doubleFancyRoom"
+            class="p-2 rounded-4xl h-[250px] w-full"
+          />
+          <p class="mx-5 font-[FontEN] text-base">Double fancy room</p>
+          <div class="flex flex-row gap-2 mx-5 mt-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="w-3"
+            >
+              <path
+                d="M384 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z"
+              />
+            </svg>
+            <p>35 sqm</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+              />
+            </svg>
+            <p>2 people</p>
+          </div>
+          <div class="flex flex-row gap-2 mx-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              class="w-3"
+            >
+              <path
+                d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"
+              />
+            </svg>
+            <p>1 king size bed and couch</p>
+          </div>
+          <p class="mx-3 mt-2 text-gray-500">
+            Non-refundable, Breakfast included
+          </p>
+          <div class="p-3 text-center">
+            <button class="bg-blue-500 w-full rounded-full p-2 text-white">
+              Book now for $280
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Review -->
+    <section class="w-full px-24 bg-white p-6 flex flex-col relative">
+      <h2 class="text-2xl font-bold mb-4">Reviews</h2>
+      <p class="text-blue-500 text-3xl font-semibold">9.6/10</p>
+
+      <article class="space-y-2 mt-5 max-w-lg">
+        <!-- Cleanliness -->
+        <div class="flex justify-between text-sm font-medium">
+          <span>Cleanliness</span>
+          <span>10/10</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+          <div class="bg-blue-600 h-2.5 rounded-full w-full"></div>
+        </div>
+
+        <!-- Amenities -->
+        <div class="flex justify-between text-sm font-medium mt-6">
+          <span>Amenities</span>
+          <span>7/10</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+          <div class="bg-blue-600 h-2.5 rounded-full w-7/10"></div>
+        </div>
+
+        <!-- Location -->
+        <div class="flex justify-between text-sm font-medium mt-6">
+          <span>Location</span>
+          <span>9/10</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+          <div class="bg-blue-600 h-2.5 rounded-full w-9/10"></div>
+        </div>
+
+        <!-- Comfort -->
+        <div class="flex justify-between text-sm font-medium mt-6">
+          <span>Comfort</span>
+          <span>8/10</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+          <div class="bg-blue-600 h-2.5 rounded-full w-8/10"></div>
+        </div>
+
+        <!-- Wifi connection -->
+        <div class="flex justify-between text-sm font-medium mt-6">
+          <span>WiFi Connection</span>
+          <span>9/10</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+          <div class="bg-blue-600 h-2.5 rounded-full w-9/10"></div>
+        </div>
+
+        <!-- Excellent value for price -->
+        <div class="absolute top-[70px] left-[700px] w-[890px] pr-42">
+          <h3 class="font-[FontEN]">Excellent value for the price!</h3>
+          <div
+            class="text-base text-gray-600 font-[FontENnormal] flex flex-row justify-between"
+          >
+            Mark M.
+            <p class="text-green-500">
+              Excellent
+              <span class="bg-green-200 px-4 py-2 rounded-full text-green-500"
+                >10</span
+              >
+            </p>
+          </div>
+          <p class="text-gray-700 mt-2 font-[FontENnormal] text-[13px]">
+            We enjoyed our stay at this hotel. We will definitely come back!
+          </p>
+          <ul
+            class="text-green-600 text-base mt-5 flex flex-col font-[FontENnormal]"
+          >
+            <li>+ Great location!</li>
+            <li class="flex flex-row justify-between">
+              + Service
+              <p class="text-gray-500">Reviewed on</p>
+            </li>
+            <li class="flex flex-row justify-between">
+              + Bottle of champagne in the room!
+              <p class="text-gray-500">20 September, 2022</p>
+            </li>
+          </ul>
+          <hr class="h-[1px] bg-gray-400 border-0 mt-6" />
+
+          <!-- Good Hotel but noisy location -->
+          <h3 class="font-[FontEN] mt-6">Good hotel but noisy location</h3>
+          <div
+            class="text-base text-gray-600 font-[FontENnormal] flex flex-row justify-between"
+          >
+            Karena L
+            <p class="text-yellow-600">
+              Average
+              <span class="bg-yellow-200 px-4 py-2 rounded-full text-yellow-600"
+                >10</span
+              >
+            </p>
+          </div>
+          <p class="text-gray-700 mt-2 font-[FontENnormal] text-[13px]">
+            Had room facing the street and it was super noisy. Unfortunately, we
+            couldn't change room.
+          </p>
+          <ul
+            class="text-red-600 text-base mt-5 flex flex-col font-[FontENnormal]"
+          >
+            <li class="flex flex-row justify-between">
+              + Service
+              <p class="text-gray-500 text-right">
+                Reviewed on <br /><span>10 September, 2022</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="relative bg-gray-100 w-full h-[200px] flex justify-between mt-[50px]"
+    >
+      <div class="px-25 pt-10">
+        <p class="font-[FontEN] text-2xl">Tripster</p>
+        <p class="pt-1">Your favorite hotel booking experience</p>
+        <p class="">since 1997!</p>
+        <p class="pt-6">Uizard &copy; 2022</p>
+      </div>
+      <div class="px-25 pt-10 text-right">
+        <p>Help</p>
+        <p class="pt-1">FAQ</p>
+        <p class="pt-1">Customer Service</p>
+        <p class="pt-1">How to guide</p>
+        <p class="pt-1">Contact us</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Result</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      @font-face {
+        font-family: "FontEN";
+        src: url(../FONT/Poppins/Poppins-Bold.ttf);
+      }
+      @font-face {
+        font-family: "FontENnormal";
+        src: url(../FONT/Poppins/Poppins-Light.ttf);
+      }
+      .card-shadow {
+        box-shadow: 0 0 5px 0 rgba(54, 54, 54, 0.349);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="flex justify-between text-center px-24 py-6 sticky top-0 z-10 shadow-sm"
+      style="background-color: rgba(255, 255, 255, 0.8)"
+    >
+      <nav class="flex gap-25 text-center justify-center">
+        <h2 class="text-2xl font-bold">Tripster</h2>
+        <ul class="flex gap-15 text-lg py-1">
+          <li><a href=""></a>Properties</li>
+          <li><a href=""></a>Attractions</li>
+          <li><a href="">Popular</a></li>
+        </ul>
+      </nav>
+      <article class="flex text-lg gap-5">
+        <button
+          class="text-blue-500 border text-center p-2 w-32 rounded-3xl border-blue-500"
+        >
+          Sign up
+        </button>
+        <button class="text-white text-center p-2 w-32 rounded-3xl bg-blue-500">
+          Log in
+        </button>
+      </article>
+    </header>
+    <!-- Search Bar -->
+    <div class="flex">
+      <section class="flex flex-col">
+        <!-- Your Search -->
+        <aside class="w-[500px] bg-gray-200 h-[620px] shadow-md px-24 pt-10">
+          <a href="../HTML/Index.html">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="w-7"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+          </a>
+          <p class="font-[FontEN] pt-3 text-xl">Your Search</p>
+          <!-- Destinations -->
+          <p class="pt-3 pb-1">Destinations</p>
+          <div
+            class="bg-white flex text-center rounded-[50px] px-5 py-4 w-[340px] text-gray-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              class="w-4"
+              fill="gray"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <p class="px-4">Copenhagen, Denmark</p>
+          </div>
+          <!-- Check in date -->
+          <p class="pt-3 pb-1">Check-in date</p>
+          <div
+            class="bg-white flex text-center rounded-[50px] px-5 py-4 w-[340px] text-gray-500"
+          >
+            <svg
+              viewBox="0 0 1024 1024"
+              class="icon w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="gray"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="gray"
+                  d="M704 192h160v736H160V192h160.064v64H704v-64zM311.616 537.28l-45.312 45.248L447.36 763.52l316.8-316.8-45.312-45.184L447.36 673.024 311.616 537.28zM384 192V96h256v96H384z"
+                ></path>
+              </g>
+            </svg>
+            <p class="px-4">Friday, 09 December 2022</p>
+          </div>
+          <!-- Check out date -->
+          <p class="pt-3 pb-1">Check-out date</p>
+          <div
+            class="bg-white flex text-center rounded-[50px] px-5 py-4 w-[340px] text-gray-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              class="w-4"
+              fill="gray"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <p class="px-4">Monday, 12 December 2022</p>
+          </div>
+          <!-- Guest -->
+          <p class="pt-3 pb-1">Guests</p>
+          <div
+            class="bg-white flex text-center rounded-[50px] px-5 py-4 w-[340px] text-gray-500"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              class="w-4"
+              fill="gray"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <p class="px-4">2 adults, 1 room</p>
+          </div>
+          <!-- Search button -->
+          <div class="pt-6">
+            <button
+              class="flex items-center justify-center bg-blue-500 text-white font-semibold py-3 px-4 rounded-[50px] shadow-md w-[340px]"
+            >
+              Search
+            </button>
+          </div>
+        </aside>
+        <!-- Guest Rating -->
+        <aside
+          class="w-[500px] bg-white h-[700px] shadow-md px-24 pt-10 border-t-2 border-gray-300"
+        >
+          <p class="font-[FontEN] text-xl">Popular filters</p>
+          <div class="space-y-2 pt-3">
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Budget hotel</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Breakfast included</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Free airport shuttle</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Hostel/Backpacker</label
+            >
+          </div>
+          <p class="font-[FontEN] text-xl pt-7">Price per night</p>
+          <div class="space-y-2 pt-3">
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Less than $50</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />$50 to $100</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />$100 to $150</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />$150 and more</label
+            >
+          </div>
+          <p class="font-[FontEN] text-xl pt-7">Guest rating</p>
+          <div class="space-y-2 pt-3">
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Any</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Excellent</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Very Good</label
+            >
+            <label class="flex items-center"
+              ><input type="checkbox" class="mr-2" />Good</label
+            >
+          </div>
+          <p class="font-[FontEN] text-xl pt-7">Property class</p>
+          <div class="flex space-x-2 pt-4">
+            <span class="border px-3 rounded-[50px]">1 &star;</span>
+            <span class="border px-3 rounded-[50px]">2 &star;</span>
+            <span class="border px-3 rounded-[50px]">3 &star;</span>
+            <span class="border px-3 rounded-[50px]">4 &star;</span>
+            <span class="border px-3 rounded-[50px]">5 &star;</span>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Search Result -->
+      <section class="w-full pt-6 px-14">
+        <p class="">140 search results for</p>
+        <div class="flex pt-3 relative items-center">
+          <p class="font-[FontEN] text-xl">
+            Copenhagen Dec 9 - 12, 2 guests, 1 room
+          </p>
+          <p
+            class="absolute left-[750px] border-gray-300 border px-8 py-2 rounded-[50px]"
+          >
+            Sort by
+          </p>
+        </div>
+        <!-- Hotel Norrebro -->
+        <article
+          class="card-shadow flex flex-row bg-white w-[865px] h-[240px] mt-10 rounded-2xl"
+        >
+          <img
+            src="../IMG/HotelNorrebro.jpg"
+            alt="HotelNorrebro"
+            class="w-[280px] h-[240px] p-3 rounded-[25px]"
+          />
+          <div class="flex-col mt-2 ml-3 w-full relative">
+            <div class="flex mr-10 relative">
+              <p class="font-[FontEN] text-xl">Hotel Norrebro</p>
+              <p class="absolute text-green-400 left-[405px] font-[FontEN]">
+                Excellent
+              </p>
+              <p
+                class="absolute bg-green-200 text-green-700 left-[495px] top-3 px-3 py-1 rounded-[50px]"
+              >
+                9.6
+              </p>
+              <p class="absolute left-[385px] top-6 text-gray-500">
+                1,920 reviews
+              </p>
+            </div>
+            <p class="text-gray-500">0,4 km from city centre</p>
+            <p class="text-gray-500">Free cancellation . Breakfast included</p>
+            <p class="font-[FontEN] text-base mt-4">Comfort room</p>
+            <p class="text-gray-500">1x king size bed</p>
+            <div class="flex mr-10 relative">
+              <p class="absolute font-[FontEN] left-[495px] top-[-20px]">
+                $180
+              </p>
+              <p
+                class="absolute left-[405px] text-right top-1 text-gray-500 font-[FontENnormal]"
+              >
+                3 night, 2 guests
+              </p>
+              <p
+                class="absolute left-[290px] text-center top-8 bg-blue-600 text-white px-10 w-[250px] py-2.5 rounded-[50px]"
+              >
+                See booking options
+              </p>
+            </div>
+            <p class="text-gray-500">1x bathroom</p>
+            <div class="flex flex-row gap-3">
+              <p
+                class="border w-[120px] text-center px-3 py-2 rounded-[50px] mt-3 border-blue-500 text-blue-500"
+              >
+                #Hot deal
+              </p>
+              <p
+                class="border w-[120px] text-center px-3 py-2 rounded-[50px] mt-3 border-blue-500 text-blue-500"
+              >
+                #Popular
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Mitte -->
+        <article
+          class="card-shadow flex flex-row bg-white w-[865px] h-[240px] mt-10 rounded-2xl"
+        >
+          <img
+            src="../IMG/HotelMitte.jpg"
+            alt="HotelMitte"
+            class="w-[280px] h-[240px] p-3 rounded-[25px]"
+          />
+          <div class="flex-col mt-2 ml-3 w-full relative">
+            <div class="flex mr-10 relative">
+              <p class="font-[FontEN] text-xl">Hotel Mitte</p>
+              <p class="absolute text-blue-600 left-[395px] font-[FontEN]">
+                Very good
+              </p>
+              <p
+                class="absolute bg-blue-200 text-blue-600 left-[495px] top-3 px-3 py-1 rounded-[50px]"
+              >
+                9.2
+              </p>
+              <p class="absolute left-[395px] top-6 text-gray-500">
+                832 reviews
+              </p>
+            </div>
+            <p class="text-gray-500">1,7 km from city centre</p>
+            <p class="text-gray-500">Free cancellation</p>
+            <p class="font-[FontEN] text-base mt-4">Standard room</p>
+            <p class="text-gray-500">1x queen size bed</p>
+            <div class="flex mr-10 relative">
+              <p class="absolute font-[FontEN] left-[490px] top-[-20px]">
+                $450
+              </p>
+              <p
+                class="absolute left-[405px] text-right top-1 text-gray-500 font-[FontENnormal]"
+              >
+                3 night, 2 guests
+              </p>
+              <p
+                class="absolute left-[290px] text-center top-8 bg-blue-600 text-white px-10 w-[250px] py-2.5 rounded-[50px]"
+              >
+                See booking options
+              </p>
+            </div>
+            <p class="text-gray-500">1x bathroom</p>
+            <div class="flex flex-row gap-3">
+              <p
+                class="border w-[120px] text-center px-3 py-2 rounded-[50px] mt-3 border-blue-500 text-blue-500"
+              >
+                #Hot deal
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel Zoo Copenhagen -->
+        <article
+          class="card-shadow flex flex-row bg-white w-[865px] h-[240px] mt-10 rounded-2xl"
+        >
+          <img
+            src="../IMG/ZooCopenhagen.jpg"
+            alt=""
+            class="w-[280px] h-[240px] p-3 rounded-[25px]"
+          />
+          <div class="flex-col mt-2 ml-3 w-full relative">
+            <div class="flex mr-10 relative">
+              <p class="font-[FontEN] text-xl">Hotel ZOO Copenhagen</p>
+              <p class="absolute text-blue-600 left-[435px] font-[FontEN]">
+                Good
+              </p>
+              <p
+                class="absolute bg-blue-200 text-blue-600 left-[495px] top-3 px-3 py-1 rounded-[50px]"
+              >
+                8.0
+              </p>
+              <p class="absolute left-[385px] top-6 text-gray-500">
+                1,000 reviews
+              </p>
+            </div>
+            <p class="text-gray-500">2.0 km from city centre</p>
+            <p class="text-gray-500">Free cancellation</p>
+            <p class="font-[FontEN] text-base mt-4">Premium room</p>
+            <p class="text-gray-500">1x king size bed</p>
+            <div class="flex mr-10 relative">
+              <p class="absolute font-[FontEN] left-[495px] top-[-20px]">
+                $220
+              </p>
+              <p
+                class="absolute left-[405px] top-1 text-gray-500 font-[FontENnormal]"
+              >
+                3 night, 2 guests
+              </p>
+              <p
+                class="absolute left-[290px] text-center top-8 bg-blue-600 text-white px-10 w-[250px] py-2.5 rounded-[50px]"
+              >
+                See booking options
+              </p>
+            </div>
+            <p class="text-gray-500">1x bathroom</p>
+            <div class="flex flex-row gap-3">
+              <p
+                class="border w-[120px] text-center px-3 py-2 rounded-[50px] mt-3 border-blue-500 text-blue-500"
+              >
+                #Popular
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Hotel bonduel -->
+        <article
+          class="card-shadow flex flex-row bg-white w-[865px] h-[240px] mt-10 rounded-2xl"
+        >
+          <img
+            src="../IMG/bonduel.jpg"
+            alt=""
+            class="w-[280px] h-[240px] p-3 rounded-[25px]"
+          />
+          <div class="flex-col mt-2 ml-3 w-full relative">
+            <div class="flex mr-10 relative">
+              <p class="font-[FontEN] text-xl">Hotel Bonduel</p>
+              <p class="absolute text-yellow-500 left-[400px] font-[FontEN]">
+                Average
+              </p>
+              <p
+                class="absolute bg-yellow-200 text-yellow-600 left-[490px] top-3 px-3 py-1 rounded-[50px]"
+              >
+                6.3
+              </p>
+              <p class="absolute left-[390px] top-6 text-gray-500">
+                200 reviews
+              </p>
+            </div>
+            <p class="text-gray-500">2.2 km from city centre</p>
+            <p class="text-gray-500">No extras</p>
+            <p class="font-[FontEN] text-base mt-4">Comfort room</p>
+            <p class="text-gray-500">1x king size bed</p>
+            <div class="flex mr-10 relative">
+              <p class="absolute font-[FontEN] left-[495px] top-[-20px]">
+                $180
+              </p>
+              <p
+                class="absolute left-[405px] top-1 text-gray-500 font-[FontENnormal]"
+              >
+                3 night, 2 guests
+              </p>
+              <p
+                class="absolute left-[290px] text-center top-8 bg-blue-600 text-white px-10 w-[250px] py-2.5 rounded-[50px]"
+              >
+                See booking options
+              </p>
+            </div>
+            <p class="text-gray-500">1x bathroom</p>
+            <div class="flex flex-row gap-3">
+              <p
+                class="border w-[120px] text-center px-3 py-2 rounded-[50px] mt-3 border-blue-500 text-blue-500"
+              >
+                #Hot deal
+              </p>
+              <p
+                class="border w-[120px] text-center px-3 py-2 rounded-[50px] mt-3 border-blue-500 text-blue-500"
+              >
+                #Popular
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Paginazion -->
+        <section
+          class="flex py-10 gap-10 justify-center text-center items-center mt-4"
+        >
+          <p class="bg-blue-500 rounded-[50%] px-2 py-1 text-white">1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>...</p>
+          <p>25</p>
+        </section>
+      </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="relative bg-gray-100 w-full h-[200px] flex justify-between mt-[-16px]">
+      <div class="px-25 pt-10">
+        <p class="font-[FontEN] text-2xl">Tripster</p>
+        <p class="pt-1">Your favorite hotel booking experience</p>
+        <p class="">since 1997!</p>
+        <p class="pt-6">Uizard &copy; 2022</p>
+      </div>
+      <div class="px-25 pt-10 text-right">
+        <p>Help</p>
+        <p class="pt-1">FAQ</p>
+        <p class="pt-1">Customer Service</p>
+        <p class="pt-1">How to guide</p>
+        <p class="pt-1">Contact us</p>
+      </div>
+    </footer>
+  </body>
+</html>
