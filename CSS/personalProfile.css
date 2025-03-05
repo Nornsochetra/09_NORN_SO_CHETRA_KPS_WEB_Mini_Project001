@@ -1,0 +1,8 @@
+#rounded-image {
+  background-color: red;
+  width: 50px;
+  /* height: 40px; */
+  background: url(../IMG/chhingjang.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}

@@ -29,23 +29,27 @@
       style="background-color: rgba(255, 255, 255, 0.8)"
     >
       <nav class="flex gap-25 text-center justify-center">
-        <a href="../HTML/Index.html"><h2 class="text-2xl font-bold">Tripster</h2></a>
+        <a href="../HTML/Index.html"
+          ><h2 class="text-2xl font-bold">Tripster</h2></a
+        >
         <ul class="flex gap-15 text-lg py-1">
           <li><a href=""></a>Properties</li>
           <li><a href=""></a>Attractions</li>
           <li><a href="">Popular</a></li>
         </ul>
       </nav>
-      <article class="flex text-lg gap-5">
-        <button
-          class="text-blue-500 border text-center p-2 w-32 rounded-3xl border-blue-500"
-        >
-          Sign up
-        </button>
-        <button class="text-white text-center p-2 w-32 rounded-3xl bg-blue-500">
-          Log in
-        </button>
-      </article>
+      <a href="../HTML/PersonalProfile.html">
+        <article class="flex text-lg gap-5">
+          <button
+            class="text-blue-500 border text-center p-2 w-32 rounded-3xl border-blue-500"
+          >
+            Sign up
+          </button>
+          <button class="text-white text-center p-2 w-32 rounded-3xl bg-blue-500">
+            Log in
+          </button>
+        </article>
+      </a>
     </header>
 
     <!-- Container -->
@@ -58,14 +62,14 @@
           <div class="py-3">
             <a href="../HTML/PropertyDetail.html">
               <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              class="w-6"
-            >
-              <path
-                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
-              />
-            </svg>
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="w-6"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+                />
+              </svg>
             </a>
           </div>
           <h2 class="text-2xl font-bold mb-5 mt-5">Book Hotel Norrebro</h2>
@@ -200,9 +204,7 @@
         </aside>
 
         <!-- Book Hotel Norrebo House rule -->
-        <aside
-          class="w-[748px] h-[250px] px-24 pt-10 border-r border-gray-300"
-        >
+        <aside class="w-[748px] h-[250px] px-24 pt-10 border-r border-gray-300">
           <h3 class="text-xl font-bold mb-4">House rules</h3>
           <div class="flex text-sm">
             <div class="">
@@ -226,8 +228,10 @@
       </article>
 
       <article class="flex flex-col px-16 mt-10 relative">
-        <div class="bg-white w-[610px] h-[880px] card-shadow rounded-2xl flex-col p-5">
-            <img
+        <div
+          class="bg-white w-[610px] h-[880px] card-shadow rounded-2xl flex-col p-5"
+        >
+          <img
             src="../IMG/HotelNorrebro.jpg"
             alt="HotelNorrebro"
             class="rounded-2xl"
@@ -268,16 +272,18 @@
           </div>
         </div>
 
-        <div class="absolute bg-blue-500 top-[1345px] w-[610px] text-center p-3 text-white rounded-full">
-          <button>Book now</button>
-        </div>
+        <a href="../HTML/Index.html">
+          <div
+            class="absolute bg-blue-500 top-[1345px] w-[610px] text-center p-3 text-white rounded-full"
+          >
+            <button>Book now</button>
+          </div>
+        </a>
       </article>
     </section>
 
     <!-- Footer -->
-    <footer
-      class="relative bg-gray-100 w-full h-[200px] flex justify-between"
-    >
+    <footer class="relative bg-gray-100 w-full h-[200px] flex justify-between">
       <div class="px-25 pt-10">
         <p class="font-[FontEN] text-2xl">Tripster</p>
         <p class="pt-1">Your favorite hotel booking experience</p>
