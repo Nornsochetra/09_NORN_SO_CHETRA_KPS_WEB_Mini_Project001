@@ -6,3 +6,9 @@
   background-size: cover;
   border-radius: 50%;
 }
+#btnSignupNow button:hover {
+  background-color: rgb(59 130 246 / var(--tw-text-opacity, 1));
+  border: none;
+  color: white;
+  transition: 0.8s;
+}
